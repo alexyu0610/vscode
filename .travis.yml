@@ -33,8 +33,8 @@ addons:
 before_install:
   - export GITHUB_TOKEN=$PUBLIC_GITHUB_TOKEN
   - git submodule update --init --recursive
-  - nvm install 8.9.1
-  - nvm use 8.9.1
+  - nvm install 12.4.1
+  - nvm use 12.4.1
   - npm i -g yarn
   # - npm config set python `which python`
   - if [ $TRAVIS_OS_NAME == "linux" ]; then
