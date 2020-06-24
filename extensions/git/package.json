@@ -1749,6 +1749,15 @@
         }
       },
       {
+        "id": "gitDecoration.stagedAddedResourceForeground",
+        "description": "%colors.stagedAdded%",
+        "defaults": {
+          "light": "#17db14",
+          "dark": "#0a5c09",
+          "highContrast": "#299e28"
+        }
+      },
+      {
         "id": "gitDecoration.submoduleResourceForeground",
         "description": "%colors.submodule%",
         "defaults": {
