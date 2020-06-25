@@ -1,0 +1,117 @@
+Storing crash reports into '/Users/jialeyu/Desktop/vscode/.build/crashes'.
+Running integration tests out of sources.
+yarn run v1.22.4
+$ node build/lib/electron
+Done in 1.04s.
+
+
+  TextSearch-integration
+    ✓ Text: GameOfLife (52ms)
+    ✓ Text: GameOfLife (RegExp)
+    ✓ Text: GameOfLife (unicode escape sequences)
+    ✓ Text: GameOfLife (unicode escape sequences, force PCRE2)
+    ✓ Text: GameOfLife (PCRE2 RegExp)
+    ✓ Text: GameOfLife (RegExp to EOL)
+    ✓ Text: GameOfLife (Word Match, Case Sensitive)
+    ✓ Text: GameOfLife (Word Match, Spaces)
+    ✓ Text: GameOfLife (Word Match, Punctuation and Spaces)
+    ✓ Text: Helvetica (UTF 16)
+    ✓ Text: e
+    ✓ Text: e (with excludes)
+    ✓ Text: e (with includes)
+    ✓ Text: sibling exclude
+    ✓ Text: e (with includes and exclude)
+    ✓ Text: a (capped)
+    ✓ Text: a (no results)
+    ✓ Text: -size
+    ✓ Multiroot: Conway
+    ✓ Multiroot: e with partial global exclude
+    ✓ Multiroot: e with global excludes
+    ✓ Multiroot: e with folder exclude
+    ✓ Text: 语
+    ✓ Multiple matches on line: h\d,
+    ✓ Search with context matches
+    error messages
+      ✓ invalid encoding
+      ✓ invalid regex case 1
+      ✓ invalid regex case 2
+      ✓ invalid glob
+
+  FileSearch-integration
+    ✓ File - simple
+    ✓ File - filepattern
+    ✓ File - exclude
+    ✓ File - multiroot
+    ✓ File - multiroot with folder name
+    ✓ File - multiroot with folder name and sibling exclude
+
+  TextSearch performance (integration)
+    - Measure
+
+  Unexpected Errors & Loader Errors
+    ✓ should not have unexpected errors
+
+
+  36 passing (637ms)
+  1 pending
+
+yarn run v1.22.4
+$ node build/lib/electron
+Done in 0.39s.
+[12:15:53] Syncronizing built-in extensions...
+[12:15:53] You can manage built-in extensions with the [36m--builtin[39m flag
+[12:15:53] [34m[marketplace][39m ms-vscode.node-debug@1.44.6 [32m✔︎[39m
+[12:15:53] [34m[marketplace][39m ms-vscode.node-debug2@1.42.4 [32m✔︎[39m
+[12:15:53] [34m[marketplace][39m ms-vscode.references-view@0.0.59 [32m✔︎[39m
+[12:15:53] [34m[marketplace][39m ms-vscode.js-debug-companion@1.0.2 [32m✔︎[39m
+[12:15:53] [34m[marketplace][39m ms-vscode.js-debug@1.46.1 [32m✔︎[39m
+[12:15:53] [34m[marketplace][39m ms-vscode.vscode-js-profile-table@0.0.5 [32m✔︎[39m
+Found --crash-reporter-directory argument. Setting temp directory to be '/Users/jialeyu/Desktop/vscode/.build/crashes'
+[0m[0m
+[0m  API tests[0m
+  [32m  ✓[0m[90m document open/close event[0m[31m (550ms)[0m
+  [32m  ✓[0m[90m shared document in notebook editors[0m[31m (356ms)[0m
+  [32m  ✓[0m[90m editor open/close event[0m[31m (99ms)[0m
+  [32m  ✓[0m[90m editor open/close event[0m[31m (399ms)[0m
+  [32m  ✓[0m[90m editor editing event 2[0m[31m (266ms)[0m
+  [32m  ✓[0m[90m editor move cell event[0m[31m (474ms)[0m
+  [32m  ✓[0m[90m notebook editor active/visible[0m[31m (583ms)[0m
+  [32m  ✓[0m[90m notebook active editor change[0m[31m (474ms)[0m
+  [32m  ✓[0m[90m edit API[0m[31m (392ms)[0m
+  [32m  ✓[0m[90m initialzation should not emit cell change events.[0m[31m (137ms)[0m
+[0m  notebook workflow[0m
+  [32m  ✓[0m[90m notebook open[0m[31m (305ms)[0m
+  [32m  ✓[0m[90m notebook cell actions[0m[31m (577ms)[0m
+  [32m  ✓[0m[90m move cells will not recreate cells in ExtHost[0m[31m (797ms)[0m
+  [32m  ✓[0m[90m cell runnable metadata is respected[0m[31m (399ms)[0m
+  [32m  ✓[0m[90m document runnable metadata is respected[0m[31m (195ms)[0m
+[0m  notebook dirty state[0m
+  [32m  ✓[0m[90m notebook open[0m[31m (741ms)[0m
+[0m  notebook undo redo[0m
+  [32m  ✓[0m[90m notebook open[0m[31m (720ms)[0m
+  [36m  - execute and then undo redo[0m
+[0m  notebook working copy[0m
+  [32m  ✓[0m[90m multiple tabs: dirty + clean[0m[31m (613ms)[0m
+  [32m  ✓[0m[90m multiple tabs: two dirty tabs and switching[0m[31m (883ms)[0m
+  [32m  ✓[0m[90m multiple tabs: different editors with same document[0m[31m (443ms)[0m
+[0m  metadata[0m
+  [32m  ✓[0m[90m custom metadata should be supported[0m[31m (88ms)[0m
+  [32m  ✓[0m[90m custom metadata should be supported[0m
+[0m  regression[0m
+  [32m  ✓[0m[90m microsoft/vscode-github-issue-notebooks#26. Insert template cell in the new empty document[0m[31m (260ms)[0m
+  [31m  1) #97830, #97764. Support switch to other editor types[0m
+  [32m  ✓[0m[90m #96105 - dirty editors[0m[31m (185ms)[0m
+[92m [0m[32m 24 passing[0m[90m (10s)[0m
+[36m [0m[36m 1 pending[0m
+[31m  1 failing[0m
+[0m  1) regression
+       #97830, #97764. Support switch to other editor types:
+
+      [31mAssertionError [ERR_ASSERTION]: '' == 'var abc = 0;'[0m
+      [32m+ expected[0m [31m- actual[0m
+
+      [32m+var abc = 0;[0m
+      [0m[90m
+      at Context.<anonymous> (extensions/vscode-notebook-tests/src/notebook.test.ts:805:10)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[0m
